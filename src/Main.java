@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
     }
+
     public static void leapYear(int checkYear) {
         if ((checkYear % 400 == 0) || (checkYear % 4 == 0 && checkYear % 100 != 0)) {
             System.out.println(checkYear + " год - високосный год");
@@ -17,10 +18,12 @@ public class Main {
         int year = 2024;
         leapYear(year);
     }
+
     public static void getAppLink(int manufacturingYear, int os) {
         System.out.printf("Установите %s версию приложения для %s по ссылке%n",
                 getAppVariant(manufacturingYear), getOsString(os));
     }
+
     public static String getOsString(int os) {
         if (os == 0) {
             return "iOS";
@@ -28,6 +31,7 @@ public class Main {
             return "Android";
         }
     }
+
     public static String getAppVariant(int year) {
         if (year > 2015) {
             return "полную";
@@ -35,12 +39,14 @@ public class Main {
             return "облегченную";
         }
     }
+
     public static void task2() {
         System.out.println((char) 27 + "[32m--------Конец задачи--------" + (char) 27 + "[0m");
         System.out.println(" ");
         System.out.println((char) 27 + "[34m----------Задача 2----------" + (char) 27 + "[0m");
         getAppLink(2014, 1);
     }
+
     public static int amountOfDays(int deliveryDistance) {
         if (deliveryDistance > 100) {
             System.out.println("Доставки нет");
@@ -59,6 +65,7 @@ public class Main {
         }
         return deliveryDistance;
     }
+    
     public static void task3() {
         System.out.println((char) 27 + "[32m--------Конец задачи--------" + (char) 27 + "[0m");
         System.out.println(" ");
